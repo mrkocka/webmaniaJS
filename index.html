@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="menu-icon"><img id="list-icon" src="./img/list.svg" alt=""></div>  
-        <div id="crat-icon" ><img id="cralist-icon" src="./img/cart4.svg" alt=""></div>
+      <div id="menu-icon">
+        <img id="list-icon" src="./img/list.svg" alt="" />
+      </div>
+      <div id="crat-icon">
+        <img id="cralist-icon" src="./img/cart4.svg" alt="" />
+      </div>
     </header>
     <nav id="nav">
-        <ul>
-            <li> <a href="#">Home</a> </li>
-            <li> <a href="#">Services</a></li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
     <main>
-        <h1>JavaScript Gyorstalpaló</h1>
-    <section id="product"></section>
+      <h1>JavaScript Gyorstalpaló</h1>
+      <section id="product"></section>
     </main>
+    <
     <aside id="crat-content">
-        <h2>Kosár</h2>
-    </aside> 
-<!-- TODO itt lesz a kosár -->
+      <h2>Kosár</h2>
+      <div class="cart-box">
+        <ul id="cart-items">
+            
+        </ul>
+      </div>
+    </aside>
+    <!-- TODO itt lesz a kosár -->
 
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
