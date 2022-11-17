@@ -12,15 +12,25 @@
 </head>
 <body>
     <header>
-        <div><img src="./img/list.svg" alt=""></div>  
-        <div id="crat-icon" ><img src="./img/cart4.svg" alt=""></div>
+        <div id="menu-icon"><img id="list-icon" src="./img/list.svg" alt=""></div>  
+        <div id="crat-icon" ><img id="cralist-icon" src="./img/cart4.svg" alt=""></div>
     </header>
-    <nav>
-        <!-- TODO A menüt meg kell csinálni -->
+    <nav id="nav">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">Services</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
     </nav>
-    <h1>JavaScript Gyorstalpaló</h1>
-<section id="product"></section>
-
+    <main>
+        <h1>JavaScript Gyorstalpaló</h1>
+    <section id="product"></section>
+    </main>
+    <aside id="crat-content">
+        <h2>Kosár</h2>
+    </aside> 
+<!-- TODO itt lesz a kosár -->
 
     <script src="./main.js"></script>
 </body>

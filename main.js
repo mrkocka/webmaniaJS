@@ -1,3 +1,34 @@
+//Változók 
+const menuButton = document.getElementById('menu-icon');
+const cratButton = document.getElementById('crat-icon');
+const nav = document.getElementById('nav');
+const cratList = document.getElementById('crat-content');
+const openIcon = document.getElementById('list-icon');
+
+
+
+//Menü funkcióiért felelős JS kód
+
+menuButton.addEventListener('click', function (event){
+  nav.classList.toggle('menu-active')
+  if (nav.classList == "menu-active") {
+    openIcon.src = "./img/close.svg"
+  }else{
+    openIcon.src = "./img/list.svg"
+  }
+
+  //TODO.src ="./img/eye-fill.svg";
+})
+
+
+//Kosár nyitás/Zárás funkcióiért felelős JS kód
+
+cratButton.addEventListener('click', function (crat){
+cratList.classList.toggle("crat-active");
+
+}) 
+
+
 
 // TODO Ezek majd backendről fognak jönni 
 const products = [
@@ -60,10 +91,35 @@ products.forEach(product => {
 
 const cart = {}
 
+
+//gyűjtsök ki az addToCart css osztályú elemeket
 const addToCratButtons = document.getElementsByClassName('addToCart');
+//nézzük meg hogy hány darab vab belőlük
 const buttonCount = addToCratButtons.length
+//lépegessünk végig rajta
 for (let i = 0; i < buttonCount; i ++) {
+  //adjunk hozzá egyesével egy klikk figyelőt 
   addToCratButtons[i].addEventListener('click', function (event) {
-    console.log[event.target.id] = 1
+    //ha még nincs benne adjpn hozzá egyet
+    if (cart[event.target.id] == undefined ){
+      cart[event.target.id] = 1
+    } else{
+      //ha már benne van akkor növejük a darabszámot 
+      cart[event.target.id]++
+    }
   })
 }
+
+// tegyünk rá egy kilkk figyelőt a kosár ikonra 
+const cartIcon = document.getElementById('crat-icon')
+cartIcon.addEventListener('click', function (){
+//lépegesünk végig a cart-on és a products tömmből keressük ki a terméket és jelenítsük meg a nevéd a cartban lévő darabszámot és a termékek árát 
+for ( const id in cart){
+  
+ console.log(products.find(product => product.id == id).name) 
+ console.log(cart[id])
+ console.log(products.find(product => product.id == id).price)
+}
+//a végén jelenítsük meg a teljes vásárlási összeget
+})
+//jelenítsük meg ami a kosárban van 

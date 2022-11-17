@@ -27,6 +27,7 @@ header div{
   justify-content: center;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
 }
 
 header div:hover{
@@ -37,6 +38,44 @@ header div:hover{
 header img{
   width: 2.4rem;
 }
+
+
+
+
+/*Nav*/
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  margin-left: .5rem;
+  letter-spacing: .2rem;
+}
+
+nav{
+position: absolute;
+top:0;
+width:10rem;
+height: 100vh;
+background-color:#6E6F73;
+padding-top: 8rem;
+transform: translateX(-10rem);
+transition: transform 350ms ease-in-out;
+}
+
+.menu-active {
+  transform: translateX(0);
+}
+
 
 h1{
   text-align: center;
@@ -97,4 +136,23 @@ h1{
   text-align: center;
   color: whitesmoke;
   font-weight: bold;
+  cursor: pointer;
+}
+
+
+aside{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 50vw;;
+  height: 100vh;
+  background-color:#6E6F73;
+  padding-top: 8rem;
+  transform:tr;
+  transition: transform 350ms ease-in-out;
+}
+
+
+.crat-active {
+  transform: translateX(0);
 }
