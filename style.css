@@ -2,9 +2,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+
 }
 
 body {
   background-color: cornsilk;
   color: #6E6F73;
+}
+
+h1{
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0 4rem 0;
+}
+
+
+#product div {
+  width: 20rem;
+  height: 24.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+#product div h2{
+  width: 100%;
+  padding: .4rem;
+  background-color: #ed254e;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  border-radius: 20px 20px 0 0 ;
+}
+
+#product div p{
+  font-size: 1.5rem;
+}
+
+#product div img{
+  width: 75%;
+}
+
+
+#product div h3{
+  font-size: 1.5rem ;
+  font-weight: bold;
+}
+
+#product div a{
+  text-decoration: none;
+  background-color:#6E6F73;
+  width: 5rem;
+  padding: .5rem;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
 }
