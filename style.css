@@ -11,16 +11,50 @@ body {
   color: #6E6F73;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem ;
+}
+
+header div{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header div:hover{
+  border: 4px solid #ed254e;
+  
+}
+
+header img{
+  width: 2.4rem;
+}
+
 h1{
   text-align: center;
   font-size: 4rem;
   margin: 2rem 0 4rem 0;
 }
 
+#product{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
 
 #product div {
   width: 20rem;
-  height: 24.5rem;
+  height: 25rem;
   background-color: white;
   display: flex;
   flex-direction: column;
